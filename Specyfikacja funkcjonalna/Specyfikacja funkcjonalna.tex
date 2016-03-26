@@ -16,78 +16,50 @@
 	\newpage
 	
 	\section[Opis ogólny]{Opis ogólny}
-	\subsection{Nazwa programu}
-		Split it PRO
-	\subsection{Poruszany problem}
-		W dzisiejszych czasach podczas wyjazdów ze znajomymi stosunkowo często dochodzi do sytuacji gdzie ciężko i niekomfortowo jest zebrać pieniądze na dany wydatek. Za przykład może posłużyć np. prosta sytuacja związana z tankowaniem samochodu. Przyjmijmy, że grupa 5 osób jest w podróży samochodowej już od kilku godzin i część z podróżnych zasnęła. Aby zapłacić uczciwie za zatankownie należałoby obudzić wszystkich i podzielić należność na każdego, przy czym musielibyśmy założyć, że każdy z podróżnych ma odpowiednią ilość drobnych pieniędzy w gotówce w danej walucie.
-	\newline
-		Dodatkowym problemem jest ograniczenie wynikające z tego, że za niektóre towary można płacić tylko kartą płatniczą więc bezpośrednie zwracanie należności byłoby utrudnione. Innym przykładem mogą być zakupy spożywcze na wieczornego grilla. Zakładając że wszyscy składają się na jednorazowy grill, jedzenie i coś do picia (jeden paragon) przynajmniej kierowca powinien pozostać trzeźwy, co rzecz jasna wyklucza go z rozliczania drugiego paragonu zawierającego alkohole. 
-	\subsection{Rozwiązanie problemu}
-		Aplikacja ma na celu ułatwienie rozliczania wydatków poniesionych podczas podróży grupy znajomych. W aplikacji użytkownicy wpisują każdy wspólny (dla więcej niż jednej osoby). Przy każdym wydatku można zaznaczyć kto zapłacił za dany towar (usługę, etc.) oraz kto jest brany pod uwagę przy rozliczaniu. Wydatki takie jak np. paliwo do samochodu są zazwyczaj dzielone na wszystkich, a bilety do muzeum tylko na zwiedzających. 	
-
-	\subsection{Użytkownik docelowy}
-		Użytkownikami docelowymi są osoby w wieku 16-30 lat, zamierzające w najbliższym czasie wyjechać w podróż w grupie więcej niż dwóch osób na minimum trzy dni. Szczególnie dotyczy się to krótkich wyjazdów spowodowanych wyjazdami okazjonalnymi np. długi weekend majowy. 
-		
+		\subsection{Nazwa programu}
+			Split it PRO
+		\subsection{Poruszany problem}
+			W dzisiejszych czasach podczas wyjazdów ze znajomymi stosunkowo często dochodzi do sytuacji gdzie ciężko i niekomfortowo jest zebrać pieniądze na dany wydatek. Za przykład może posłużyć np. prosta sytuacja związana z tankowaniem samochodu. Przyjmijmy, że grupa 5 osób jest w podróży samochodowej już od kilku godzin i część z podróżnych zasnęła. Aby zapłacić uczciwie za zatankownie należałoby obudzić wszystkich i podzielić należność na każdego, przy czym musielibyśmy założyć, że każdy z podróżnych ma odpowiednią ilość drobnych pieniędzy w gotówce w danej walucie.
+		\newline
+			Dodatkowym problemem jest ograniczenie wynikające z tego, że za niektóre towary można płacić tylko kartą płatniczą więc bezpośrednie zwracanie należności byłoby utrudnione. Innym przykładem mogą być zakupy spożywcze na wieczornego grilla. Zakładając że wszyscy składają się na jednorazowy grill, jedzenie i coś do picia (jeden paragon) przynajmniej kierowca powinien pozostać trzeźwy, co rzecz jasna wyklucza go z rozliczania drugiego paragonu zawierającego alkohole. 
+		\subsection{Rozwiązanie problemu}
+			Aplikacja ma na celu ułatwienie rozliczania wydatków poniesionych podczas podróży grupy znajomych. W aplikacji użytkownicy wpisują każdy wspólny (dla więcej niż jednej osoby). Przy każdym wydatku można zaznaczyć kto zapłacił za dany towar (usługę, etc.) oraz kto jest brany pod uwagę przy rozliczaniu. Wydatki takie jak np. paliwo do samochodu są zazwyczaj dzielone na wszystkich, a bilety do muzeum tylko na zwiedzających. 	
 	
+		\subsection{Użytkownik docelowy}
+			Użytkownikami docelowymi są osoby w wieku 16-30 lat, zamierzające w najbliższym czasie wyjechać w podróż w grupie więcej niż dwóch osób na minimum trzy dni. Szczególnie dotyczy się to krótkich wyjazdów spowodowanych wyjazdami okazjonalnymi np. długi weekend majowy. 
+			
 	\section[Opis funkcjonalności]{Opis funkcjonalności}
-	\subsection{Jak korzystać z programu?}
-	Użytkowanie programu będzie odbywało się w interfejsie graficznych w środowisku android 5.1 - testowany na Nexusa 4.
-	\\
-	Po włączeniu aplikacji użytkownik może wybierać wcześniej utworzone lub dodawać nowe podróże - dla każdego kolejnego wyjazdu, albo nowej ekipy wyjazdowej zaleca się tworzenie nowego projektu. 
-	\\
-	Użytkownik może
-	\begin{itemize}
-		\item dodawać nowy rachunek
-		\begin{itemize}
-			\item kwota
-			\item data/czas
-			\item nazwa towaru/usługi/kategorii
-			\item wybierać osobę, która zapłaciła 
-			\item wybierać osoby, które należy uwzględnić przy rozliczeniu
-		\end{itemize}
-		\item dodawać nowych podróżnych
-		\item rozliczać koszty
-		\begin{itemize}
-			\item pokazywać aktualny bilans
-			\item pokazywać proponowany sposób rozliczenia pomiędzy użytkownikami w taki sposób aby ilość wykonanych operacji była jak najmniejsza
-		\end{itemize}
-	\end{itemize}
-	
-	Całość danych powinna być przechowywana w chmurze w taki sposób, aby każdy z użytkowników mógł w wygodny sposób dodawać rachunki. Jest to zabezpieczenie na wypadek rozładowania się telefonu przez głównego użytkownika, a także kontrolowanie przez innych czy nigdzie nie nastąpiła pomyłka przy wprowadzaniu danych. 
-
-	\subsection{Możliwości programu}
-	Program powinien umożliwiać:
-	\begin{itemize}
-		\item wczytywanie do programu początkowej konfiguracji generacji z pliku o wybranym formacie,
-		\item przeprowadzenie zadanej liczby generacji,
-		\item wygenerowanie N obrazów przedstawiających stan wybranych generacji (np. w postaci plików PNG),
-		\item zapisywanie bieżącej generacji do pliku (który może zostać potem wczytany).
-	\end{itemize}	
-	\section[Format danych i struktura plików]{Format danych i struktura plików}
-	\subsection{Przechowywanie danych w programie}
-	Dane będą przechowywane w tablicach dwówymiarowych:
-	\begin{itemize}
-		\item int tableA[HEIGHT][WIDTH] - tablica inicjowana za pierwszym razem przez bitmapę dostarczoną przez użytkownika. W kolejnych stanach generalizacji jest ona wynikiem przejścia przez weryfikację warunków życie/śmierć dla każdej komórki
-		\item int tableB[HEIGHT][WIDTH] - ta tablica w pierwszym stanie generalizacji jest zerowana. Dopiero w kolejnych stanach jest wypełniana "1" w miejscach, gdzie powinna pozostać lub urodzić się nowa komórka w zależności od tableA.
-	\end{itemize}
-	\subsection{Dane wejściowe}
-	Przechowywane w folderze razem z plikiem wykonywalnym, pliki graficzne
-	w formacie *.bmp
-	\subsection{Dane wyjściowe}
-	Przechowywane w folderze z plikiem wykonywalnym, pliki tekstowew formacie *.txt lub grafincze w formacie *.bmp albo *.png
-	
-	\section[Scenariusz działania programu]{Scenariusz działani programu}
-	\begin{enumerate}
-		\item Plik graficzny będący początkowym stanem generalizacji zostaje przekonwertowany na tablicę i wypełnia tableA[hieght][width]
-		\item Na podstawie pierwszego stanu generalizacji zostają wygenerowane wszystkie następne
-		\item W zależności od wyboru użytkownika zostaje wygenerowany ostatni lub wszystkie stany generalizacji w pliku graficznym. 
+		\subsection{Jak korzystać z programu?}
+			Użytkowanie programu będzie odbywało się w interfejsie graficznych w środowisku android 5.1 - testowany na Nexusa 4.
+			\\
+			Po włączeniu aplikacji użytkownik może wybierać wcześniej utworzone lub dodawać nowe podróże - dla każdego kolejnego wyjazdu, albo nowej ekipy wyjazdowej zaleca się tworzenie nowego projektu. 
+			\\
+			Użytkownik może
+			\begin{itemize}
+				\item dodawać nowy rachunek
+				\begin{itemize}
+					\item kwota
+					\item data/czas
+					\item nazwa towaru/usługi/kategorii
+					\item wybierać osobę, która zapłaciła 
+					\item wybierać osoby, które należy uwzględnić przy rozliczeniu
+				\end{itemize}
+				\item dodawać nowych podróżnych
+				\item rozliczać koszty
+				\begin{itemize}
+					\item pokazywać aktualny bilans
+					\item pokazywać proponowany sposób rozliczenia pomiędzy użytkownikami w taki sposób aby ilość wykonanych operacji była jak najmniejsza
+				\end{itemize}
+			\end{itemize}
+			
+			Całość danych powinna być przechowywana w chmurze w taki sposób, aby każdy z użytkowników mógł w wygodny sposób dodawać rachunki. Jest to zabezpieczenie na wypadek rozładowania się telefonu przez głównego użytkownika, a także kontrolowanie przez innych czy nigdzie nie nastąpiła pomyłka przy wprowadzaniu danych. 
 		
-	\end{enumerate}
+			
+	\section[Format danych i struktura plików]{Format danych i struktura plików}
+		\subsection{Przechowywanie danych w programie}
+			Każdy paragon (wydatek) będzie przechowywany w tablicy. Każda kolejna komórka tablicy będzie odpowiadała udziałowi każdego z użytkowników w rachunku. 
 	
 	\section[Testowanie]{Testowanie}
-	Program będzie testowany przy użyciu różnych źródłowych map bitowych oraz przy różnych wymiarach. W celu ułątiwenia podglądania zmian kolejnych stanów generalizacji poszczególne stany zostaną połączone i zostanie stworzony w nich ruchomy element *.gif
-		
-		
-		
+	Program będzie testowany na podstawie przygotowanych wcześniej scenariuszy wycieczek. Należności pomiędzy użytkownikami zostaną najpierw policzone ręcznie, a następnie wprowadzone do programu w celu sprawdzenie poprawności działania. 		
 		
 \end{document}

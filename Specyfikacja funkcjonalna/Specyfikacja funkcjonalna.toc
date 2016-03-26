@@ -5,10 +5,6 @@
 \contentsline {subsection}{\numberline {1.4}U\IeC {\.z}ytkownik docelowy}{2}
 \contentsline {section}{\numberline {2}Opis funkcjonalno\IeC {\'s}ci}{3}
 \contentsline {subsection}{\numberline {2.1}Jak korzysta\IeC {\'c} z programu?}{3}
-\contentsline {subsection}{\numberline {2.2}Mo\IeC {\.z}liwo\IeC {\'s}ci programu}{4}
 \contentsline {section}{\numberline {3}Format danych i struktura plik\IeC {\'o}w}{4}
 \contentsline {subsection}{\numberline {3.1}Przechowywanie danych w programie}{4}
-\contentsline {subsection}{\numberline {3.2}Dane wej\IeC {\'s}ciowe}{4}
-\contentsline {subsection}{\numberline {3.3}Dane wyj\IeC {\'s}ciowe}{4}
-\contentsline {section}{\numberline {4}Scenariusz dzia\IeC {\l }ania programu}{5}
-\contentsline {section}{\numberline {5}Testowanie}{5}
+\contentsline {section}{\numberline {4}Testowanie}{4}
